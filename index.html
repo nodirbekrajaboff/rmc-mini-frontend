@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MRC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+            },
+            colors: {
+              dark: "#0B0E17",
+              gray: "#ABAEB7",
+              primary: "#FFC978",
+            },
+            backgroundImage: {
+              body: "url('/images/background.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-dark bg-body">
+    <header class="absolute top-0 left-0 z-10 w-full">
+      <div class="container py-7 flex items-center gap-[180px]">
+        <img src="/images/logo.png" alt="Logo" />
+        <nav>
+          <ul
+            class="text-base font-medium uppercase text-gray flex gap-9 items-center"
+          >
+            <li>
+              <a href=""> THE STUDIO </a>
+            </li>
+            <li>
+              <a href=""> pROJECTS </a>
+            </li>
+            <li>
+              <a href=""> architecture </a>
+            </li>
+            <li>
+              <a href=""> Blog </a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="ml-auto font-medium uppercase py-4 px-8 border text-white text-base"
+        >
+          Contact
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="relative">
+        <div class="container">
+          <div
+            class="text-white flex flex-col items-start max-w-[600px] w-full pt-[200px] pb-[277px] relative z-10"
+          >
+            <span class="mb-8 text-base text-primary uppercase"
+              >Architecture design
+            </span>
+            <h1 class="mb-3 text-7xl font-normal uppercase">
+              Professional Interior Design
+            </h1>
+            <p class="mb-12 text-gray text-xl font-normal">
+              Design for now with the awareness of yesterday and unknown
+              tomorrow. Because small details make the perfect design. Helping
+              you choose between good and best.
+            </p>
+            <a
+              href=""
+              class="uppercase font-medium py-4 px-8 border text-white text-base"
+            >
+              Contact
+            </a>
+          </div>
+        </div>
+        <span
+          class="absolute bottom-0 left-0 text-dark/40 font-extrabold text-9xl uppercase"
+        >
+          Interior
+        </span>
+        <img src="/images/path.svg" alt="Path" class="absolute top-0 left-0" />
+        <img
+          class="absolute top-0 right-0 w-1/2 h-full object-cover"
+          src="/images/hero-img.png"
+          alt="Hero background"
+        />
+      </section>
+    </main>
+  </body>
+</html>
